@@ -1,0 +1,36 @@
+Cucumber live class 1
+
+-- programming language - java
+-- tools - to automate - selenium
+	(it is used to automate only web based application (UI))
+
+	-- report
+	-- control of execution
+
+User story - Login functionality validation
+
+test cases - valid login
+	in cucumber/gherkin/BDD
+
+
+test cases - invalid login
+
+dependencies
+Java - language
+Maven - build too
+Selenium - added
+Cucumber - added
+properties file - added
+Excel File - added
+
+
+User story - Search employee in the HRMS system
+
+Test case 1 - Search employee by id
+Test case 2 - search employee by name
+
+tagname
+
+@chiki or @godwill - only the test case having one of the tags will be executed
+@chiki and @godwill - only the test case having both the tags available will be executed
+
