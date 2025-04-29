@@ -12,6 +12,7 @@ public class EmployeeSearchSteps extends CommonMethods {
     public void user_clicks_on_search_button() {
         WebElement searchButton = driver.findElement(By.id("searchBtn"));
         searchButton.click();
+
     }
 
 
