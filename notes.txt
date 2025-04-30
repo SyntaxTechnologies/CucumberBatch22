@@ -34,3 +34,27 @@ tagname
 @chiki or @godwill - only the test case having one of the tags will be executed
 @chiki and @godwill - only the test case having both the tags available will be executed
 
+Live class 2 -
+
+feature files - scenarios we write in feature files
+step definition class - to keep all step defs in it
+test runner class - feature, glue - providing package of step definitions, dry run - to generate missing step
+definitions, plugin - for reporting purpose, tags - to execute one/multiple scenarios as needed
+batchwise execution
+
+background -
+it is applicable for one feature file
+till the time flow is same across all the scenarios in feature file, we can keep them in background
+background will be executed before every scenario
+
+Hooks - we keep pre condition and post condition of the project in it
+hooks are applicable for the entire project
+hooks class will always be in steps package
+
+order of execution
+
+-- hooks -> background -> scenario
+ data driven testing - to execute one test case against multiple set of data
+
+
+

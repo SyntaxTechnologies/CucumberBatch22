@@ -14,6 +14,7 @@ public class EmployeeSearchSteps extends CommonMethods {
         searchButton.click();
 
     }
+
     @When("user clicks on PIM option")
     public void user_clicks_on_pim_option() {
         //WebElement pimOption = driver.findElement(By.id("menu_pim_viewPimModule"));
