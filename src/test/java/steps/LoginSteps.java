@@ -3,6 +3,7 @@ package steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,7 +16,7 @@ import java.time.Duration;
 
 public class LoginSteps extends CommonMethods {
 
-    LoginPage loginPage = new LoginPage();
+   // LoginPage loginPage = new LoginPage();
 
    //comment this line because webdriver is calling from common methods
   //  public static WebDriver driver;
@@ -67,7 +68,15 @@ public class LoginSteps extends CommonMethods {
 
     @Then("user is able to see error message")
     public void user_is_able_to_see_error_message() {
+        //assertions - comparing the values
+        String errorMessage = loginPage.errorMessage.getText();
+        Assert.assertEquals(errorMessage, "Invalid credentials");
         System.out.println("error is shown");
+
+
+        //assertions - checking the existence of  the field
+        Assert.assertTrue(loginPage.errorMessage.isDisplayed());
+
     }
 
 }

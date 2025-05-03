@@ -11,14 +11,15 @@ public class LoginPage extends CommonMethods {
     @FindBy(id = "txtUsername")
     public WebElement usernameField;
 
-    @FindBy(id = "txtUsername")
+    @FindBy(id = "txtPassword")
     public WebElement passwordField;
 
-    @FindBy(id = "txtUsername")
+    @FindBy(id = "btnLogin")
     public WebElement loginButton;
 
-    @FindBy(id = "spanMessage")
+    @FindBy(xpath = "//*[@id='spanMessage']")
     public WebElement errorMessage;
+
 
 
     public LoginPage(){

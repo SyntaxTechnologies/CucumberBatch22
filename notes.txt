@@ -64,6 +64,32 @@ Cucumber class 3 -
 POM - page object model design pattern - for every single screen, you have one page class
 - under this class, you keep locators/web elements/object repository belong to that page
 
+assertions - to validate all the required fields, values, button, options
+assertequals - when you have to compare 2 values together
+
+if it is passing, it will not give you any message
+if it is failing, it will give you assertion error
+
+
+rerun plugin - when we execute our test cases  and some of them are failed, then it gets the path of
+those failed test cases and keep it under one file and then we can execute this file to check only failed test
+cases.
+
+excel file - excel reader and calling it in scripts
+page object model design pattern
+assertions - assertequals and asserttrue
+pageinitializer
+rerun plugin
+failed runner
+regression runner
+html report
+
+what is pending -
+cucumber report with screenshot
+maven lifecycle
+execution from pom.xml file
+
+
 
 
 
