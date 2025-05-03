@@ -37,5 +37,8 @@ Feature: Adding employees
      |sal        |ms          |chikhi    |
      |kerry      |ms          |irfan     |
 
+   @excel
+   Scenario: Adding employees using excel file
+     When user adds multiple employees from excel file and validate them
 
 

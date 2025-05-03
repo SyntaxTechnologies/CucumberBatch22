@@ -56,5 +56,14 @@ order of execution
 -- hooks -> background -> scenario
  data driven testing - to execute one test case against multiple set of data
 
+jerenow
+Jere_12@3
+
+Cucumber class 3 -
+
+POM - page object model design pattern - for every single screen, you have one page class
+- under this class, you keep locators/web elements/object repository belong to that page
+
+
 
 

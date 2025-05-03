@@ -5,7 +5,9 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utils.CommonMethods;
+import utils.ExcelReader;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
@@ -85,6 +87,31 @@ public class AddEmployeeSteps extends CommonMethods {
             click(saveButton);
             //after clicking on save button again I have go to add employee page
             Thread.sleep(2000);
+            WebElement addEmployeeOption = driver.findElement(By.id("menu_pim_addEmployee"));
+            click(addEmployeeOption);
+            Thread.sleep(2000);
+
+        }
+
+    }
+
+    @When("user adds multiple employees from excel file and validate them")
+    public void user_adds_multiple_employees_from_excel_file_and_validate_them() throws IOException, InterruptedException {
+        //we need to read the data from excel file
+        List<Map<String, String>> newEmployees = ExcelReader.read();
+
+        for (Map<String, String> employee :newEmployees){
+            WebElement firstNameloc = driver.findElement(By.id("firstName"));
+            WebElement middleNameloc = driver.findElement(By.id("middleName"));
+            WebElement lastNameloc = driver.findElement(By.id("lastName"));
+
+            sendText(employee.get("firstName"), firstNameloc);
+            sendText(employee.get("middleName"), middleNameloc);
+            sendText(employee.get("lastName"), lastNameloc);
+
+            WebElement saveButton = driver.findElement(By.id("btnSave"));
+            click(saveButton);
+
             WebElement addEmployeeOption = driver.findElement(By.id("menu_pim_addEmployee"));
             click(addEmployeeOption);
             Thread.sleep(2000);
