@@ -89,6 +89,35 @@ cucumber report with screenshot
 maven lifecycle
 execution from pom.xml file
 
+live class 4 -
+
+reports - for local references
+
+characteristics -
+scalable
+mature
+reusable
+no hard coded data
+single point execution
+
+maven surefire plugin - it makes your project as a single build
+
+phases of maven
+clean - it deleted the target folder
+validate - it checks the validity of the code
+compile - it compiles
+test - it executes the code
+package - it converts into packages
+verify -
+install -  it installs all the required jars and plugins
+site -
+deploy - it deploys the code
+
+test - install, validate, compile, package, test
+
+
+
+
 
 
 
