@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         dryRun = false,
         tags = "@regression",
         //html report
-        plugin = {"pretty","html:target/cucumber.html"}
+        plugin = {"pretty","html:target/cucumber.html","rerun:target/failed.txt","json:target/cucumber.json"}
 )
 
 public class RegressionRunner {
