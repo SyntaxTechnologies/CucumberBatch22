@@ -16,6 +16,6 @@ import org.junit.runner.RunWith;
         dryRun = false,
         tags = "@api",
         //html report
-        plugin = {"pretty","html:target/cucumber.html"}
+        plugin = {"pretty"}
 )public class ApiRunner {
 }
